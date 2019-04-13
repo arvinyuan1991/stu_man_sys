@@ -9,7 +9,7 @@ from teachers.models import Teacher
 class TeacherAbsencesAdmin(object):
     model_icon = 'fa fa-gift'
     list_display = ['id', 'teacher', 'course']
-    search_fields = ['teacher']
+    list_per_page = 5
 
     # 重写save_models根据缺勤更新学生的课时和课时费
     def save_model(self):

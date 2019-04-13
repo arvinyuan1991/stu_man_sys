@@ -32,6 +32,7 @@ class StudentAdmin(object):
     list_display = ['id', 'name', 'age', 'gender', 'total_money', 'remain_money', 'total_hour', 'use_hour',
                     'remain_hour']
     search_fields = ['name']
+    list_per_page = 5
 
 
 xadmin.site.register(models.Student, StudentAdmin)

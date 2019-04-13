@@ -9,6 +9,7 @@ class ClassAdmin(object):
     model_icon = 'fa fa-gift'
     search_fields = ['name']
     ordering = ['id']
+    list_per_page = 5
 
 
 xadmin.site.register(models.Class, ClassAdmin)

@@ -9,7 +9,7 @@ from students.models import Student
 class AbsencesAdmin(object):
     model_icon = 'fa fa-gift'
     list_display = ['id', 'student', 'course']
-    search_fields = ['student']
+    list_per_page = 5
 
     # 重写save_models根据缺勤更新学生的课时和课时费
     def save_models(self):
