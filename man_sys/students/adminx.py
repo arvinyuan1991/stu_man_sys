@@ -33,6 +33,7 @@ class StudentAdmin(object):
                     'remain_hour']
     search_fields = ['name']
     list_per_page = 5
+    ordering = ['id']
 
 
 xadmin.site.register(models.Student, StudentAdmin)

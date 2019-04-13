@@ -10,6 +10,7 @@ class CoursesAdmin(object):
                     'total_time', 'student_money', 'teacher_money']
     search_fields = ['title']
     list_per_page = 5
+    ordering = ['start_time']
 
 
 xadmin.site.register(models.Courses, CoursesAdmin)

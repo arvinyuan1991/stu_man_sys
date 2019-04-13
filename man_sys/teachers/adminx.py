@@ -10,6 +10,7 @@ class TeacherAdmin(object):
     list_display = ['id', 'name', 'age', 'gender', 'total_money', 'total_hour']
     search_fields = ['name']
     list_per_page = 5
+    ordering = ['id']
 
 
 xadmin.site.register(models.Teacher, TeacherAdmin)

@@ -10,6 +10,7 @@ class AbsencesAdmin(object):
     model_icon = 'fa fa-gift'
     list_display = ['id', 'student', 'course']
     list_per_page = 5
+    ordering = ['id']
 
     # 重写save_models根据缺勤更新学生的课时和课时费
     def save_models(self):
